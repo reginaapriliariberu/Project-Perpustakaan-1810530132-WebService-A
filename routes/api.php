@@ -27,8 +27,8 @@ Route::post('tabelbuku', 'API\BukuController@store')->middleware('auth:api');
 Route::delete('tabelbuku/{id}', 'API\BukuController@destroy')->middleware('auth:api');
 Route::patch('tabelbuku/{id}', 'API\BukuController@update')->middleware('auth:api');
 
-Route::get('rakbuku', 'API\RakBukuController@index')->middleware('auth:api');
-Route::get('rakbuku/{id}', 'API\RakBukuController@show')->middleware('auth:api');
+Route::get('rakbuku', 'API\RakBukuController@index');
+Route::get('rakbuku/{id}', 'API\RakBukuController@show');
 Route::post('rakbuku', 'API\RakBukuController@store')->middleware('auth:api');
 Route::delete('rakbuku/{id}', 'API\RakBukuController@destroy')->middleware('auth:api');
 Route::patch('rakbuku/{id}', 'API\RakBukuController@update')->middleware('auth:api');
